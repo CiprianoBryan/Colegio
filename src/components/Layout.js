@@ -1,0 +1,12 @@
+import React from 'react';
+
+function Layout(props) {
+    return (
+        <React.Fragment>
+            {/* <ComponentRepeat/> */}
+            {props.children}
+        </React.Fragment>
+    );
+}
+
+export default Layout;
