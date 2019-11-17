@@ -1,0 +1,11 @@
+{
+	"alumnos": [
+	  {
+		"id": "1",
+		"firstName": "Bryan",
+		"lastName": "Cipriano",
+		"email": "bciprianot@gmail.com",
+		"avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
+	  }
+	]
+}

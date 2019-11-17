@@ -19,7 +19,7 @@ function Login() {
 					<h2>Contraseña</h2>
 					<input className="form-control" type="password"></input>
 				</div>
-				<Link className="btn btn-login btn-classic" to="/">Login</Link>
+				<Link className="btn btn-login btn-classic" to="/panel">Login</Link>
 				<div className="login_redes">
 					<Link className="btn btn-facebook btn-classic" to="/">Facebook</Link>
 					<Link className="btn btn-google btn-classic" to="/">Google</Link>
