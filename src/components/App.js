@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-// import Page from '../pages/Page';
-// import NotFound from '../pages/NotFound';
+import Login from '../pages/Login';
+import NotFound from '../pages/NotFound';
 import Layout from './Layout';
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
         <BrowserRouter>
             <Layout>
                 <Switch>
-                    {/* <Route exact path="/path" component={Page}/>
-                    <Route component={NotFound}/> */}
+                    <Route exact path="/login" component={Login}/>
+                    <Route component={NotFound}/>
                 </Switch>
             </Layout>
         </BrowserRouter>
