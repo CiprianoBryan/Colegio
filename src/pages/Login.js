@@ -19,10 +19,10 @@ function Login() {
 					<h2>Contraseña</h2>
 					<input className="form-control" type="password"></input>
 				</div>
-				<button className="btn-login btn-classic" to="/badge">Login</button>
+				<Link className="btn btn-login btn-classic" to="/">Login</Link>
 				<div className="login_redes">
-					<button className="btn-facebook btn-classic" to="/badge">Facebook</button>
-					<button className="btn-google btn-classic" to="/badge">Google</button>
+					<Link className="btn btn-facebook btn-classic" to="/">Facebook</Link>
+					<Link className="btn btn-google btn-classic" to="/">Google</Link>
 				</div>
 			</form>
 		</div>
