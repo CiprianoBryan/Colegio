@@ -1,9 +1,10 @@
 import React from 'react';
+import Bar from './Bar';
 
 function Layout(props) {
     return (
         <React.Fragment>
-            {/* <ComponentRepeat/> */}
+            <Bar/>
             {props.children}
         </React.Fragment>
     );

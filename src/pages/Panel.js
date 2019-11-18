@@ -5,6 +5,7 @@ import PanelInfo from '../components/PanelInfo';
 import api from '../api';
 
 import './styles/Panel.css';
+import visibilityModal from '../utils/VisibilityModal';
 
 import cheveron_left from '../images/cheveron-left.svg';
 import cheveron_right from '../images/cheveron-right.svg';
@@ -37,6 +38,7 @@ class Panel extends React.Component {
 	};
 
 	componentDidMount() {
+		// visibilityModal('hidden');
 		this.fetchData();
 	}
 
@@ -74,9 +76,9 @@ class Panel extends React.Component {
 		if (this.state.error) {
 			return <PageError error={this.state.error}/>
 		}
+		// visibilityModal('visible');
 		return (
 			<div className="Panel row">
-				{/* <div className="Panel_info" style={{transform: `translateX(${-this.state.panelInfoWidth})`}}> */}
 				<div className="Panel_info" style={{transform: `translateX(-${this.state.panelWidth[0]}%)`}}>
 					<PanelInfo alumno={this.state.data}/>
 				</div>

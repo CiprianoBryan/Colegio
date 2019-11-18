@@ -2,10 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import './styles/Login.css';
+import visibilityModal from '../utils/VisibilityModal';
 
 import schoolLogo from '../images/ana-maria-rivier.jpg';
 
 function Login() {
+	visibilityModal('hidden');
     return (
 		<div className="Login">
 			<img className="School_logo" src={schoolLogo} alt="schoolLogo"/>
