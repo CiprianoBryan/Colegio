@@ -38,7 +38,7 @@ class Panel extends React.Component {
 	};
 
 	componentDidMount() {
-		// visibilityModal('hidden');
+		visibilityModal('hidden');
 		this.fetchData();
 	}
 
@@ -76,7 +76,7 @@ class Panel extends React.Component {
 		if (this.state.error) {
 			return <PageError error={this.state.error}/>
 		}
-		// visibilityModal('visible');
+		visibilityModal('visible');
 		return (
 			<div className="Panel row">
 				<div className="Panel_info" style={{transform: `translateX(-${this.state.panelWidth[0]}%)`}}>
