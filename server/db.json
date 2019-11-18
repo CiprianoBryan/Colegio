@@ -2,9 +2,10 @@
 	"alumnos": [
 	  {
 		"id": "1",
-		"firstName": "Bryan",
-		"lastName": "Cipriano",
+		"firstName": "Bryan Tony",
+		"lastName": "Cipriano Tarazona",
 		"email": "bciprianot@gmail.com",
+		"grade": "5 Secundaria",
 		"avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
 	  }
 	]

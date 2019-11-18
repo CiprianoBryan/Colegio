@@ -1,15 +1,38 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import PageLoading from '../components/PageLoading';
 import PageError from '../components/PageError';
+import PanelInfo from '../components/PanelInfo';
 import api from '../api';
 
 import './styles/Panel.css';
+
+import cheveron_left from '../images/cheveron-left.svg';
+import cheveron_right from '../images/cheveron-right.svg';
+
+function Cheveron(props) {
+	if (props.show) {
+		return (
+			<React.Fragment>
+				<img className="button_hidden_img" src={cheveron_left} alt="cheveron_left"/>
+				<div className="button_hidden_message">Ocultar</div>
+			</React.Fragment>
+		);
+	} else {
+		return (
+			<React.Fragment>
+				<div className="button_hidden_message">Mostrar</div>
+				<img className="button_hidden_img" src={cheveron_right} alt="cheveron_right"/>
+			</React.Fragment>
+		);
+	}
+}
 
 class Panel extends React.Component {
 	state = {
 		loading: true,
 		error: null,
+		showData: true,
+		panelWidth: [0, 0, 0],
 		data: undefined
 	};
 
@@ -36,6 +59,14 @@ class Panel extends React.Component {
 		}
 	}
 
+	handleClick = e => {
+		let widths = this.state.showData? [100, 375, 48.387]: [0, 0, 0];
+		this.setState({
+			showData: !this.state.showData,
+			panelWidth: widths
+		});
+	};
+
 	render() {
 		if (this.state.loading && !this.state.data) {
 			return <PageLoading/>;
@@ -44,16 +75,27 @@ class Panel extends React.Component {
 			return <PageError error={this.state.error}/>
 		}
 		return (
-			<React.Fragment>
-				<div className="container">
-					<div className="Badges__buttons">
-						<button>Ocultar</button>
-					</div>
-					<div>
-						{this.state.data.firstName} {this.state.data.lastName}
+			<div className="Panel row">
+				{/* <div className="Panel_info" style={{transform: `translateX(${-this.state.panelInfoWidth})`}}> */}
+				<div className="Panel_info" style={{transform: `translateX(-${this.state.panelWidth[0]}%)`}}>
+					<PanelInfo alumno={this.state.data}/>
+				</div>
+				<div className="Panel_button" style={{transform: `translateX(-${this.state.panelWidth[1]}%)`}}>
+					<div className="button_hidden" onClick={this.handleClick}>
+						<Cheveron show={this.state.showData}/>
 					</div>
 				</div>
-			</React.Fragment>
+				<div className="Panel_main" style={{transform: `translateX(-${this.state.panelWidth[2]}%)`}}>
+					<div className="Panel_main_buttons">	
+						<div className="btn btn-classic">
+							Notas
+						</div>
+						<div className="btn btn-classic">
+							Asistencias
+						</div>
+					</div>
+				</div>
+			</div>
 		);
 	}
 }

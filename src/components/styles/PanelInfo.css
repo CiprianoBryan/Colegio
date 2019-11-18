@@ -1,0 +1,24 @@
+.PanelInfo {
+	padding: 13%;
+	font-size: 30px;
+}
+
+.avatar {
+	margin-top: 25%;
+	margin-bottom: 5%;
+}
+
+.PanelInfo > .row {
+	padding-top: 5%;
+}
+
+.PanelInfo_avatar {
+	border-radius: 50%;
+	height: 220px;
+	display: block;
+	margin: 0 auto;
+}
+
+.label {
+	margin-right: 2%;
+}
