@@ -6,7 +6,29 @@
 		"lastName": "Cipriano Tarazona",
 		"email": "bciprianot@gmail.com",
 		"grade": "5 Secundaria",
-		"avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
+		"avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon",
+		"notas": [
+			{
+				"name": "Logico Matematico",
+				"notas": [14, 13, 19, 11, 15]
+			},
+			{
+				"name": "Comunicacion Integral",
+				"notas": [17, 18, 15, 17, 18]
+			},
+			{
+				"name": "Ciencia y ambiente",
+				"notas": [15, 13, 14, 15, 14]
+			},
+			{
+				"name": "Personal social",
+				"notas": [13, 13, 13, 14, 13]
+			},
+			{
+				"name": "Religion",
+				"notas": [9, 10, 10, 6, 9]
+			}
+		]
 	  }
 	]
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PageLoading from '../components/PageLoading';
 import PageError from '../components/PageError';
 import PanelInfo from '../components/PanelInfo';
@@ -62,7 +63,7 @@ class Panel extends React.Component {
 	}
 
 	handleClick = e => {
-		let widths = this.state.showData? [100, 375, 48.387]: [0, 0, 0];
+		let widths = this.state.showData? [100, 361, 47]: [0, 0, 0];
 		this.setState({
 			showData: !this.state.showData,
 			panelWidth: widths
@@ -89,12 +90,12 @@ class Panel extends React.Component {
 				</div>
 				<div className="Panel_main" style={{transform: `translateX(-${this.state.panelWidth[2]}%)`}}>
 					<div className="Panel_main_buttons">	
-						<div className="btn btn-classic">
+						<Link className="btn btn-classic" to="/notas">
 							Notas
-						</div>
-						<div className="btn btn-classic">
+						</Link>
+						<Link className="btn btn-classic" to="/asistencias">
 							Asistencias
-						</div>
+						</Link>
 					</div>
 				</div>
 			</div>

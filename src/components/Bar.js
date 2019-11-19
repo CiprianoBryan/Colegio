@@ -8,7 +8,7 @@ function Bar(props) {
     return <Modal>
         <div className="Bar">
 			<div className="Bar_options">
-				<div className="btn btn-classic option">ALUMNO</div>
+				<Link className="btn btn-classic option" to="/panel">ALUMNO</Link>
 				<div className="btn btn-classic option">PAGOS</div>
 				<div className="btn btn-classic option">EVENTOS</div>
 				<Link className="btn btn-classic option" to="/login">SALIR</Link>
