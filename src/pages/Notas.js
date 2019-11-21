@@ -24,8 +24,6 @@ class Notas extends React.Component {
 		});
 		try {
 			const data = await api.alumnos.read("1");
-			console.log(data);
-			console.log(data.notas);
 			this.setState({
 				loading: false,
 				data: data.notas
@@ -48,19 +46,24 @@ class Notas extends React.Component {
 		let periods = ['I', 'II', 'III', 'IV', 'Promedio Final'];
 		return (
 			<div className="Notas">
-				<h1>Notas</h1>
-				<div className="row">{
-					periods.map((period, i) => (
-						<li key={i} className="labelPeriod col">{period}</li>
-					))
-				}</div>
-				{
-					this.state.data.map((curso, i) => (
-						<li key={i}>
-							<CursoNotas curso={curso}/>
-						</li>
-					))
-				}
+				<h1 className="title">Notas</h1>
+				<div className="Notas_container">
+					<div className="row">
+						<div className="col"/>
+						<div className="col row">{
+							periods.map((period, i) => (
+								<li key={i} className="labelPeriod col">{period}</li>
+							))
+						}</div>
+					</div>
+					{
+						this.state.data.map((curso, i) => (
+							<li key={i}>
+								<CursoNotas curso={curso}/>
+							</li>
+						))
+					}
+				</div>
 			</div>
 		);
 	}

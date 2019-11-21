@@ -1,6 +1,33 @@
 .labelPeriod {
-	width: 10%;
+	width: 20%;
 	height: 50px;
 	text-align: center;
-	background-color: red;
+	/* background-color: red; */
+}
+
+.title {
+	margin-left: 3%;
+	margin-top: 3%;
+	font-size: 300%;
+}
+
+.Notas_container {
+	width: 95%;
+	margin-left: 3%;
+	margin-top: 3%;
+	font-size: 30px;
+}
+
+.Notas_container > div > div:first-child {
+	max-width: 30%;
+	/* background-color: blue; */
+}
+
+.Notas_container > div > div:last-child {
+	border-bottom-style: solid;
+	padding-bottom: 3%;
+}
+
+.Notas_container > div {
+	margin-bottom: 4%;
 }
