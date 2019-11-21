@@ -45,14 +45,23 @@ class Notas extends React.Component {
 		if (this.state.error) {
 			return <PageError error={this.state.error}/>
 		}
+		let periods = ['I', 'II', 'III', 'IV', 'Promedio Final'];
 		return (
-			<div className="Notas">{
-				this.state.data.map((curso, i) => (
-					<li key={i}>
-						<CursoNotas curso={curso}/>
-					</li>
-				))
-			}</div>
+			<div className="Notas">
+				<h1>Notas</h1>
+				<div className="row">{
+					periods.map((period, i) => (
+						<li key={i} className="labelPeriod col">{period}</li>
+					))
+				}</div>
+				{
+					this.state.data.map((curso, i) => (
+						<li key={i}>
+							<CursoNotas curso={curso}/>
+						</li>
+					))
+				}
+			</div>
 		);
 	}
 }
