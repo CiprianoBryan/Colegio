@@ -37,11 +37,6 @@ class Asistencias extends React.Component {
 		}
 	}
 
-	handleChangeDay = date => {
-		console.log('aea');
-		// this.setState({date});
-	}
-
 	render() {
 		if (this.state.loading && !this.state.data) {
 			return <PageLoading/>;
@@ -53,13 +48,7 @@ class Asistencias extends React.Component {
 			<div className="Asistencia">
 				<h1 className="title">Asistencia</h1>
 				<Calendar
-					onClickDay={this.handleChangeDay}
-					onClickMonth={console.log('month')}
-					onClickYear={console.log('year')}
-					showNeighboringMonth={false}
-					dosanlw="ñnoneñ"
 					className="Asistencia_calendar"
-					onChange={this.handleChangeDay}
 					value={this.state.date}
 				/>
 			</div>
