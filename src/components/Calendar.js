@@ -28,12 +28,12 @@ class Calendar extends React.Component {
 		} catch {}
 	}
 
-	onDrillActive = ({date, view}) => {
-		if (view === 'month') {
-			this.assistanceToCalendar();
+	onDrillActive = res => {
+		if (res.view === 'month') {
+			this.assistanceToCalendar(res);
 		}
 		this.setState({
-			view: view
+			view: res.view
 		});
 	}
 
