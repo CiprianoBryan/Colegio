@@ -1,34 +1,5 @@
-.react-calendar {
-	width: 95%;
-	font-size: 30px;
-	height: 120%;
-	margin: 0 auto;
-	margin-top: 3%;
-	border-style: none;
-}
-
 .title {
 	margin-left: 3%;
 	margin-top: 3%;
 	font-size: 300%;
-}
-
-.react-calendar__navigation__arrow {
-	font-size: 60px;
-}
-
-.react-calendar__navigation__prev2-button, .react-calendar__navigation__next2-button {
-	display: none;
-}
-
-.asistio {
-	background-color: green;
-}
-
-.tardanza {
-	background-color: yellow;
-}
-
-.inasistio {
-	background-color: red;
 }

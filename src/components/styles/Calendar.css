@@ -1,0 +1,36 @@
+.react-calendar {
+	width: 95%;
+	font-size: 30px;
+	height: 120%;
+	margin: 0 auto;
+	margin-top: 3%;
+	border-style: none;
+}
+
+.react-calendar__navigation__arrow {
+	font-size: 60px;
+}
+
+.react-calendar__navigation__prev2-button, .react-calendar__navigation__next2-button {
+	display: none;
+}
+
+.asistio {
+	background-color: green;
+}
+
+.tardanza {
+	background-color: yellow;
+}
+
+.inasistio {
+	background-color: red;
+}
+
+.unselect {
+	width: 100%;
+	height: 460px;
+	margin-top: 100px;
+	background-color: inherit;
+	position: absolute;
+}

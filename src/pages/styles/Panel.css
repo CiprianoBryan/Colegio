@@ -1,13 +1,11 @@
 .Panel {
 	width: 100%;
-	/* background-color: red; */
 }
 
 .Panel_info {
 	width: 30%;
 	overflow: hidden;
 	transition: 1s;
-	/* background-color: green; */
 }
 
 .Panel_button {
@@ -18,30 +16,25 @@
 	height: 100vh;
 	border-right-style: solid;
 	transition: 1s;
-	/* background-color: brown; */
 }
 
 .Panel_main {
 	width: 62%;
 	transition: 1s;
-	/* background-color: blue; */
 }
 
 .button_hidden {
 	cursor: pointer;
 	display: flex;
 	user-select: none;
-	/* background-color: yellow; */
 }
 
 .button_hidden_img {
 	width: 30%;
-	/* background-color: red; */
 }
 
 .button_hidden_message {
 	width: 70%;
-	/* background-color: green; */
 }
 
 .Panel_main_buttons {
@@ -49,7 +42,6 @@
 	margin-top: 25%;
 	padding-left: 10%;
 	padding-right: 10%;
-	/* background-color: red; */
 }
 
 .Panel_main_buttons > .btn {
