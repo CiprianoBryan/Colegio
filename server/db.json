@@ -1,34 +1,200 @@
 {
 	"alumnos": [
-	  {
-		"id": "1",
-		"firstName": "Bryan Tony",
-		"lastName": "Cipriano Tarazona",
-		"email": "bciprianot@gmail.com",
-		"grade": "5 Secundaria",
-		"avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon",
-		"notas": [
-			{
-				"name": "Logico Matematico",
-				"notas": [14, 13, 19, 11, 15]
-			},
-			{
-				"name": "Comunicacion Integral",
-				"notas": [17, 18, 15, 17, 18]
-			},
-			{
-				"name": "Ciencia y ambiente",
-				"notas": [15, 13, 14, 15, 14]
-			},
-			{
-				"name": "Personal social",
-				"notas": [13, 13, 13, 14, 13]
-			},
-			{
-				"name": "Religion",
-				"notas": [9, 10, 10, 6, 9]
+		{
+			"id": "1",
+			"firstName": "Bryan Tony",
+			"lastName": "Cipriano Tarazona",
+			"email": "bciprianot@gmail.com",
+			"grade": "5 Secundaria",
+			"avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon",
+			"notas": [
+				{
+					"name": "Logico Matematico",
+					"notas": [14, 13, 19, 11, 15]
+				},
+				{
+					"name": "Comunicacion Integral",
+					"notas": [17, 18, 15, 17, 18]
+				},
+				{
+					"name": "Ciencia y ambiente",
+					"notas": [15, 13, 14, 15, 14]
+				},
+				{
+					"name": "Personal social",
+					"notas": [13, 13, 13, 14, 13]
+				},
+				{
+					"name": "Religion",
+					"notas": [9, 10, 10, 6, 9]
+				}
+			],
+			"asistencia": {
+				"octubre": [
+					{
+						"date": "1 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "2 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "3 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "3 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "4 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "7 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "8 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "9 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "10 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "11 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "14 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "15 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "16 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "17 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "18 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "21 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "22 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "23 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "24 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "25 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "28 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "29 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "30 de octubre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "31 de octubre de 2019",
+						"motive": "asistio"
+					}
+				],
+				"noviembre": [
+					{
+						"date": "1 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "4 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "5 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "6 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "7 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "8 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "11 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "12 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "13 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "14 de noviembre de 2019",
+						"motive": "tardanza"
+					},
+					{
+						"date": "15 de noviembre de 2019",
+						"motive": "inasistio"
+					},
+					{
+						"date": "18 de noviembre de 2019",
+						"motive": "inasistio"
+					},
+					{
+						"date": "19 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "20 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "21 de noviembre de 2019",
+						"motive": "asistio"
+					},
+					{
+						"date": "22 de noviembre de 2019",
+						"motive": "asistio"
+					}
+				]
 			}
-		]
-	  }
+		}
 	]
 }

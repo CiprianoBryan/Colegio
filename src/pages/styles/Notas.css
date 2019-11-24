@@ -31,25 +31,3 @@
 .Notas_container > div {
 	margin-bottom: 4%;
 }
-
-.react-calendar__month-view__days__day {
-	user-select: none;
-}
-
-.react-calendar__month-view__days__day:hover {
-	user-select: none;
-	/* display: none; */
-}
-
-.react-calendar__tile {
-	background-color: red;
-	
-}
-
-.react-calendar__month-view__days__day {
-	background-color: red;
-}
-
-.Asistencia_calendar {
-	background-color: rebeccapurple;
-}

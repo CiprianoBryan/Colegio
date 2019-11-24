@@ -10,9 +10,11 @@ class Asistencias extends React.Component {
 	state = {
 		loading: true,
 		error: null,
-		data: undefined,
-		date: new Date()
+		data: undefined
 	};
+
+	monthNames = ["enero", "febrero", "marzo", "abril", "mayo", "junio", 
+		"julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 
 	componentDidMount() {
 		this.fetchData();
@@ -27,14 +29,28 @@ class Asistencias extends React.Component {
 			const data = await api.alumnos.read("1");
 			this.setState({
 				loading: false,
-				data: data.notas
+				data: data.asistencia
 			});
+			this.assistanceToCalendar();
 		} catch (error) {
 			this.setState({
 				loading: false,
 				error: error
 			});
 		}
+	}
+
+	assistanceToCalendar = res => {
+		let monthNumber = (res? res.activeStartDate: new Date()).getMonth();
+		let monthName = this.monthNames[monthNumber];
+		try {
+			this.state.data[monthName].forEach(day => {
+				try {
+					let element = document.querySelector(`[aria-label="${day.date}"]`).parentElement;
+					element.classList.add(day.motive);
+				} catch {}
+			});
+		} catch {}
 	}
 
 	render() {
@@ -48,8 +64,10 @@ class Asistencias extends React.Component {
 			<div className="Asistencia">
 				<h1 className="title">Asistencia</h1>
 				<Calendar
-					className="Asistencia_calendar"
-					value={this.state.date}
+					onActiveDateChange={this.assistanceToCalendar}
+					minDate={new Date(new Date().getFullYear(), 0, 1)}
+					maxDate={new Date(new Date().getFullYear(), 11, 31)}
+					value={new Date()}
 				/>
 			</div>
 		);
