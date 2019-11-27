@@ -1,0 +1,66 @@
+div.swipe {
+    position: relative;
+    overflow: hidden; margin: 0 auto; }
+    
+    div.swipe-item {
+    position: absolute; top: 0;
+    width: 100%; height: 100%; overflow: hidden; }
+    
+    input.swipe-radio { display: none; }
+    
+    div.swipe-controller {
+    position: absolute; left: 0; top: 0; z-index: 1;
+    opacity: 0;
+    width: 100%; }
+    
+    input.swipe-radio:checked + div.swipe-item div.swipe-controller { opacity: 1; }
+    
+    input.swipe-radio:first-of-type + div.swipe-item label.swipe-prev,
+    input.swipe-radio:last-of-type + div.swipe-item label.swipe-next { display: none; }
+    
+    label.swipe-prev,
+    label.swipe-next { cursor: pointer; }
+    
+    /* --- YOUR SETTINGS HERE --- */
+    /* Box Size */
+    div.swipe { width: 290px; height: 380px; }
+    
+    /* Swipe Out (Position and Timing) */
+    input.swipe-radio:not(:checked) + div.swipe-item {
+    -webkit-transform: translateX(-290px);
+        -ms-transform: translateX(-290px);
+            transform: translateX(-290px);
+    -webkit-transition: -webkit-transform 0.4s ease;
+            transition: transform 0.4s ease; }
+    
+    /* Starting Position */
+    input.swipe-radio:checked ~ div.swipe-item {
+    -webkit-transform: translateX(290px);
+        -ms-transform: translateX(290px);
+            transform: translateX(290px); }
+    
+    /* Swipe In (Position and Timing) */
+    input.swipe-radio:checked + div.swipe-item {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.4s ease;
+            transition: transform 0.4s ease; }
+    
+    /* Arrows need to delay */
+    input.swipe-radio:checked + div.swipe-item div.swipe-controller {
+    -webkit-transition: opacity 1s ease 0.4s;
+            transition: opacity 1s ease 0.4s; }
+    
+    /* Arrows */
+    label.swipe-prev,
+    label.swipe-next {
+    position: relative; top: 158px;
+    display: block;
+    width: 64px; height: 64px; overflow: hidden;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABACAYAAADS1n9/AAAD/UlEQVR4Ae1cTWsUQRA10YAievCmlwSPHsxVUAhiPPlX/cCDF0ElYEA8aUAviq4QFRQUIorf63tKkza7jtNDV3dNdRU8dnd2t7ve69fVM7OzszCdTvd5tKvAYrvUnTkVcAM07gM3gBugcQUap+8VwA3QuAKN0/cK4AZoXIHG6XsFaNwABwbyX8L3TgMrwFGAr2vEN3S6A0yALYCvS4QZ/gsDTgWfgMJrwJESSif08QGf3QBeJXxnyEdN8U81AMlfAhaGKFfgO/xh4wYgZQJz/FP2AVj2OPO1Dj5S+50bc5RYkkzyTzHAKoTVVvY56HuDOXL/JHeY5J9igOXcigq2tyLQtkn+KQbg3v5YQiJXiTal9Oyda4oBJNZVKQEkcpVoszr/FANIJevtVlTADVBRfA1dazXAV4hzW4NAmXIgF3JSFxoN8AYqXQWeqlNreELkQk7kpio0GWAKZR4A1wGe37cW5ERu5EiuKmLoj0G5k/+IBu8AUqdwc+c7tD0O/H1gGzgPHAaqhoYKMIEClwHrgx8PNLmS8yTeWON5zQrwHYTvAY9rEFfQ5xfkcBM4BZwBqoxFlU5B9h1wC3gPtB6cAK+BC8Cx0mLUWAIegeQ1wAd/d7SpBTWhNkWjZAX4DGa8YONFUYbj6ewHUt0EtoE14CAgHqUqwEsw4U6PD/7/h5QaUStqJh7SBvgJBjzs4VU6n8TZ2OmAWlEzakcNxUJyCeCJD+7ovRXL3n7DPGnESsAdxN4/8abIIlUBniCJK4APfspozP8sNaSW1DR7SBlgPzIlPPIoIKan1BJwEryPA3eB53k0aLYVankWOCShgJQBmCsTvgg8A2gEHgZ69FeAh4HnABpALCQNEJL2ahCU6P8oOuvjNEoYgP15NYhV//fzIrM+7r6UAUKfXg2CErOPxWZ93HVpA7BvrwbxCPw55Su+1v/d5e6rGgYIvYdqsIkN3FFsMarM+ljomgZgHqwG60BrRwrF13qKPS9qGyDk1FI1qD7rg+h81GIA5mK9GqiZ9RQ7hCYDhJziahC2jf1R1ayPxdRoAOYXqkGc65ifr2tNflFrYp5XGQVSDFDqBkw5mEvkKtFmDq7z2uida4oBxvRvHYlcJdqcN3g5tvXONcUAY7qeb5JDxT1tmOSfYoCHEIS3YtMezHFLIEmT/FMMwHVlA+D/27QGc2OOvdfABCIm+afeJ5B68V55vG5d2x3D/EaRA26UOcQANMESsAosA7xala9rBGcld3gmAMu+xMxHszNhhv9QA8wo4hvGqUDKPsA4GXrWnQq4ATrlsf+mG8D+GHcydAN0ymP/TTeA/THuZOgG6JTH/ptuAPtj3MnQDdApj/033QD2x7iT4S/fM7k3jt99PQAAAABJRU5ErkJggg==) no-repeat; background-size: 128px 64px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); }
+    
+    label.swipe-prev { float: left; background-position: left top; }
+    
+    label.swipe-next { float: right; background-position: right top; }

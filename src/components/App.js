@@ -5,6 +5,7 @@ import Panel from '../pages/Panel';
 import Notas from '../pages/Notas';
 import Asistencias from '../pages/Asistencias';
 import Pagos from '../pages/Pagos';
+import Eventos from '../pages/Eventos';
 import NotFound from '../pages/NotFound';
 import Layout from './Layout';
 
@@ -18,6 +19,7 @@ function App() {
                     <Route exact path="/notas" component={Notas}/>
                     <Route exact path="/asistencias" component={Asistencias}/>
                     <Route exact path="/pagos" component={Pagos}/>
+                    <Route exact path="/eventos" component={Eventos}/>
                     <Route component={NotFound}/>
                 </Switch>
             </Layout>

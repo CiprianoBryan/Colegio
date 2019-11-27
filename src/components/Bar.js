@@ -10,7 +10,7 @@ function Bar(props) {
 			<div className="Bar_options">
 				<Link className="btn btn-classic option" to="/panel">ALUMNO</Link>
 				<Link className="btn btn-classic option" to="/pagos">PAGOS</Link>
-				<div className="btn btn-classic option">EVENTOS</div>
+				<Link className="btn btn-classic option" to="/eventos">EVENTOS</Link>
 				<Link className="btn btn-classic option" to="/login">SALIR</Link>
 			</div>
         </div>
