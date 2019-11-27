@@ -1,0 +1,35 @@
+.title {
+	margin-left: 3%;
+	margin-top: 3%;
+	font-size: 300%;
+}
+
+.Pagos_header {
+	display: flex;
+}
+
+.space {
+	width: 18%;
+	text-align: center;
+}
+
+.Pagos_header .space:nth-child(3) {
+	margin-left: 7%;
+}
+
+.Pagos_header .space:nth-child(4) {
+	margin-left: 8.5%;
+}
+
+.Pagos_container {
+	width: 95%;
+	margin: auto;
+	margin-top: 6%;
+	font-size: 30px;
+}
+
+.Pagos_mes_data {
+	margin-top: 2%;
+	padding-top: 2%;
+	border-top-style: solid;
+}

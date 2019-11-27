@@ -196,5 +196,90 @@
 				]
 			}
 		}
+	],
+	"controlDePago": [
+		{
+			"mes": "Marzo",
+			"costo": 120
+		},
+		{
+			"mes": "Abril",
+			"costo": 120
+		},
+		{
+			"mes": "Mayo",
+			"costo": 120
+		},
+		{
+			"mes": "Junio",
+			"costo": 120
+		},
+		{
+			"mes": "Julio",
+			"costo": 120
+		},
+		{
+			"mes": "Agosto",
+			"costo": 120
+		},
+		{
+			"mes": "Septiembre",
+			"costo": 120
+		},
+		{
+			"mes": "Octubre",
+			"costo": 120
+		},
+		{
+			"mes": "Noviembre",
+			"costo": 120
+		}
+	],
+	"mesesPago": [
+		{
+			"mes": "Marzo",
+			"pago": 120,
+			"costo": 120
+		},
+		{
+			"mes": "Abril",
+			"pago": 0,
+			"costo": 120
+		},
+		{
+			"mes": "Mayo",
+			"pago": 0,
+			"costo": 120
+		},
+		{
+			"mes": "Junio",
+			"pago": 0,
+			"costo": 120
+		},
+		{
+			"mes": "Julio",
+			"pago": 0,
+			"costo": 120
+		},
+		{
+			"mes": "Agosto",
+			"pago": 0,
+			"costo": 120
+		},
+		{
+			"mes": "Septiembre",
+			"pago": 0,
+			"costo": 120
+		},
+		{
+			"mes": "Octubre",
+			"pago": 0,
+			"costo": 120
+		},
+		{
+			"mes": "Noviembre",
+			"pago": 0,
+			"costo": 120
+		}
 	]
 }

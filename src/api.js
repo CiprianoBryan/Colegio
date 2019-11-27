@@ -48,6 +48,62 @@ const api = {
 			});
 		},
 	},
+	controlDePago: {
+		list() {
+			// throw new Error('500: Server Error');
+			return callApi('/controlDePago');
+		},
+		create(badge) {
+			// throw new Error('500: Server error');
+			return callApi(`/controlDePago`, {
+				method: 'POST',
+				body: JSON.stringify(badge),
+			});
+		},
+		read(badgeId) {
+			return callApi(`/controlDePago/${badgeId}`);
+		},
+		update(badgeId, updates) {
+			return callApi(`/controlDePago/${badgeId}`, {
+				method: 'PUT',
+				body: JSON.stringify(updates),
+			});
+		},
+		// Lo hubiera llamado `delete`, pero `delete` es un keyword en JavaScript asi que no es buena idea :P
+		remove(badgeId) {
+			return callApi(`/controlDePago/${badgeId}`, {
+				method: 'DELETE',
+			});
+		},
+	},
+	mesesPago: {
+		list() {
+			// throw new Error('500: Server Error');
+			return callApi('/mesesPago');
+		},
+		create(badge) {
+			// throw new Error('500: Server error');
+			return callApi(`/mesesPago`, {
+				method: 'POST',
+				body: JSON.stringify(badge),
+			});
+		},
+		read(badgeId) {
+			return callApi(`/mesesPago/${badgeId}`);
+		},
+		update(badgeId, updates) {
+			return callApi(`/mesesPago/${badgeId}`, {
+				method: 'PUT',
+				body: JSON.stringify(updates),
+			});
+		},
+		// Lo hubiera llamado `delete`, pero `delete` es un keyword en JavaScript asi que no es buena idea :P
+		remove(badgeId) {
+			return callApi(`/mesesPago/${badgeId}`, {
+				method: 'DELETE',
+			});
+		},
+	}
 };
 
 export default api;
